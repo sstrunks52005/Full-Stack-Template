@@ -24,3 +24,6 @@ app.listen(process.env.PORT || PORT, () => {        //if PORT work heroku will a
     console.log(`Server is running on port`)
 })
 
+//7 middleware
+app.set('view engine', 'ejs')
+app.use(express.static('public'))           //setup public folder - lets app automatically serve files in public as they are called upon
