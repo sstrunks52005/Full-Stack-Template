@@ -12,10 +12,16 @@ git init -> git repo ->
 .gitignore - node_modules
 
 //3 Declare variables
+
 //4 Connect to mongodb - add connection string to .env file - used to hide info and pw
     -mongodb - connect - connection your database - past string into .env and replace password
+    - add .env to .gitignore
+
 //5 Create port
-//6 Test mongo and port connection
+
+//6 Test mongo and port connection - manually test (node server.js) or add nodemon 
+    - add "dev": "nodemon server.js" to package.json file
+
 //7 Set middleware
 //8 Create gitignore file
 //9 Create Public and Views folders - add main.js and style.css to Public and index.ejs to Views
