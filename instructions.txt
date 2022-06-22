@@ -1,28 +1,29 @@
-Initialize npm and install dependencies  (npm init)
--Express, dotenv, cors, mongodb, ejs, nodemon (--save-dev)
--npm install express (node_modules + package-lock.json)
--dotenv - hide files/variables (npm install dotenv)
--cors - bypass cors errors (cross origin request). access things locally (npm install cors)
-- ejs - html templating (npm install ejs)
--nodemon - auto restart connection (npm install nodemon --save-dev)
+//1 Initialize npm and install dependencies  (npm init)
+    -Express, dotenv, cors, mongodb, ejs, nodemon (--save-dev)
+    -npm install express (node_modules + package-lock.json)
+    -dotenv - hide files/variables (npm install dotenv)
+    -cors - bypass cors errors (cross origin request). access things locally (npm install cors)
+    - ejs - html templating (npm install ejs)
+    -nodemon - auto restart connection (npm install nodemon --save-dev)
 
-Require dependencies - setup in server.js file to enable dependencies
+//2 Require dependencies - setup in server.js file to enable dependencies
 
 git init -> git repo ->
 .gitignore - node_modules
 
-Declare variables
-Connect to mongodb - add connection string to .env file
-Create port
-Test mongo and port connection
-Set middleware
-Create gitignore file
-Create Public and Views folders - add main.js and style.css to Public and index.ejs to Views
-From root, init local git repo and commit
-Create heroku repo
--Heroku login
--Heroku create simple-rap-api
--Echo “web: node server.js” > Procfile
--Git add.
--Git commit -m “changes”
--Git push heroku 
+//3 Declare variables
+//4 Connect to mongodb - add connection string to .env file - used to hide info and pw
+    -mongodb - connect - connection your database - past string into .env and replace password
+//5 Create port
+//6 Test mongo and port connection
+//7 Set middleware
+//8 Create gitignore file
+//9 Create Public and Views folders - add main.js and style.css to Public and index.ejs to Views
+//10 From root, init local git repo and commit
+//11 Create heroku repo
+    -Heroku login
+    -Heroku create simple-rap-api
+    -Echo “web: node server.js” > Procfile
+    -Git add.
+    -Git commit -m “changes”
+    -Git push heroku 
