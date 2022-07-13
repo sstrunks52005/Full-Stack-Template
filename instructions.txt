@@ -21,9 +21,11 @@ git init -> git repo ->
 
 //6 Test mongo and port connection - manually test (node server.js) or add nodemon 
     - add "dev": "nodemon server.js" to package.json file
+    - add port = xxxx and DB_STRING from mongo connect to .env file
 
 //7 Set middleware - when data is flowing back and forth, middleware transform, read, format the data 
     - EJS templating allow us to run JS in html (shorthand tool)
+    - public folder - servering all the files from public if anyone access them under the base/path
 
 //8 Create gitignore file
 //9 Create Public and Views folders - add main.js and style.css to Public and index.ejs to Views

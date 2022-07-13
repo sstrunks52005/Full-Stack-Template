@@ -24,6 +24,9 @@ app.listen(process.env.PORT || PORT, () => {        //if PORT work heroku will a
     console.log(`Server is running on port`)
 })
 
-//7 middleware
-app.set('view engine', 'ejs')
+//7 middleware - need these prior to any crud operations (get, put etc)
+app.set('view engine', 'ejs')               //templating let us run JS in html. shorthand tool
 app.use(express.static('public'))           //setup public folder - lets app automatically serve files in public as they are called upon
+app.use(express.urlencoded({extended:true}))  //returns middleware that only parses urlencoded bodies 
+app.use(express.json())                     //JSON - how obj is formatted when sent back and forth. parse our data returned from a db in json
+app.use(cors())                             //cross origin request, stops cor errors. 
