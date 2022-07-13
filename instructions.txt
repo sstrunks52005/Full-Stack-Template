@@ -36,9 +36,13 @@ git init -> git repo ->
 
 //10 Create heroku repo - push files up to repo
     -heroku needs access to db string. take out .env from .gitignore or it cannot connect. Readd back after
+    -heroku will have your db string but it will only serve your Public files not .env data
     -Heroku login
     -Heroku create simple-rap-api
     -Echo "web: node server.js" > Procfile
     -Git add.
     -Git commit -m “changes”
     -Git push heroku 
+
+    - forgot to add get request so server doesn't know to pull up index.ejs
+    -Test heroku link

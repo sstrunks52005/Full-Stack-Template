@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
+const { response } = require('express')
 const MongoClient = require('mongodb').MongoClient
 require('dotenv').config()
 //can add const PORT = 8000 but dont need to since its in .env file
@@ -30,3 +31,12 @@ app.use(express.static('public'))           //setup public folder - lets app aut
 app.use(express.urlencoded({extended:true}))  //returns middleware that only parses urlencoded bodies 
 app.use(express.json())                     //JSON - how obj is formatted when sent back and forth. parse our data returned from a db in json
 app.use(cors())                             //cross origin request, stops cor errors. 
+
+//10 test heroku - listen for url to pass into server and return to different location. express method:
+app.get('/', async(request, respond)) => {
+    try {
+        response.render('index.ejs')  //when visit to home page, render index.ejs to display, if not work send error
+    } catch(error) {
+        response.status(500).send({message: error.message})
+    }
+}
