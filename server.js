@@ -28,7 +28,7 @@ app.use(express.json())                     //JSON - how obj is formatted when s
 app.use(cors())                             //cross origin request, stops cor errors. 
 
 //10 test heroku - listen for url to pass into server and return to different location. express method:
-app.get('/', async(request, respond) => {
+app.get('/', async(request, response) => {
     try {
         response.render('index.ejs')  //when visit to home page, render index.ejs to display, if not work send error
     } catch(error) {
