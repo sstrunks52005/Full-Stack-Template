@@ -10,7 +10,7 @@ require('dotenv').config()
 let db,
     dbConnectionString = process.env.DB_STRING,     //connection string to connect MongoDB. Pull out of environment file
     dbName = 'startrek-aliens-guide',
-    connection
+    collection
 
 //4 connect to mongo db
     MongoClient.connect(dbConnectionString)         //tells mongo to grab connection string and have credentials to access
