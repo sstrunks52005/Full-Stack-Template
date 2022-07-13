@@ -17,20 +17,25 @@ git init -> git repo ->
     -mongodb - connect - connection your database - past string into .env and replace password
     - add .env to .gitignore
 
+// Add .env file to gitignore
 //5 Create port
 
-//6 Test mongo and port connection - manually test (node server.js) or add nodemon 
+//test mongo & port connection
+ Test mongo and port connection - manually test (node server.js) or add nodemon 
     - add "dev": "nodemon server.js" to package.json file
     - add port = xxxx and DB_STRING from mongo connect to .env file
 
-//7 Set middleware - when data is flowing back and forth, middleware transform, read, format the data 
+//6 Set middleware - when data is flowing back and forth, middleware transform, read, format the data 
     - EJS templating allow us to run JS in html (shorthand tool)
     - public folder - servering all the files from public if anyone access them under the base/path
 
-//8 Create gitignore file
-//9 Create Public and Views folders - add main.js and style.css to Public and index.ejs to Views
-//10 From root, init local git repo and commit
-//11 Create heroku repo
+//8 Create Public and Views folders - add main.js and style.css to Public and index.ejs to Views
+    - currently only have server.js - connections to and from, backend tool
+
+//9 Add content to main.js (need method to pass data back and forth from server), style.css, index.ejs (script + link rel)
+
+//10 Create heroku repo - push files up to repo
+    -heroku needs access to db string. take out .env from .gitignore or it cannot connect. Readd back after
     -Heroku login
     -Heroku create simple-rap-api
     -Echo “web: node server.js” > Procfile

@@ -24,7 +24,7 @@ app.listen(process.env.PORT || PORT, () => {        //if PORT work heroku will a
     console.log(`Server is running on port`)
 })
 
-//7 middleware - need these prior to any crud operations (get, put etc)
+//6 middleware - need these prior to any crud operations (get, put etc)
 app.set('view engine', 'ejs')               //templating let us run JS in html. shorthand tool
 app.use(express.static('public'))           //setup public folder - lets app automatically serve files in public as they are called upon
 app.use(express.urlencoded({extended:true}))  //returns middleware that only parses urlencoded bodies 
