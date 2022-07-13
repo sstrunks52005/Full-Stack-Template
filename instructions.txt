@@ -38,7 +38,7 @@ git init -> git repo ->
     -heroku needs access to db string. take out .env from .gitignore or it cannot connect. Readd back after
     -Heroku login
     -Heroku create simple-rap-api
-    -Echo “web: node server.js” > Procfile
+    -Echo "web: node server.js" > Procfile
     -Git add.
     -Git commit -m “changes”
     -Git push heroku 
